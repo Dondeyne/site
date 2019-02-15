@@ -3,8 +3,8 @@
 ## Installing
 
 ```sh
-git clone https://github.com/Dondeyne/DondeyneSite
-cd DondeyneSite
+git clone https://github.com/Dondeyne/site
+cd site
 pip3 install -r requirements.txt
 pybabel compile -d translations
 ```
