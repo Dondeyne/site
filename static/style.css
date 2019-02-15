@@ -1,0 +1,145 @@
+/**
+ * Body
+ */
+body {
+	background: url(/static/background.jpg) fixed;
+	background-size: cover;
+	margin: 0;
+	font-family: fantasy;
+}
+
+
+/**
+ * Navigation
+ */
+nav {
+	display: flex;
+	background: #fffa;
+	box-shadow: 0.1em 0.1em 0.1em 0.1em #0005;
+}
+
+nav > * {
+	margin: 0;
+	padding: 1em;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+}
+
+nav > a:hover {
+	background-color: #eee7;
+}
+
+nav > a:hover:active {
+	background-color: #ddd7;
+}
+
+
+/**
+ * Content
+ */
+main {
+	background: #fffa;
+	border-radius: 1em;
+	margin: 1em;
+	padding: 1em;
+	backdrop-filter: blur(0.4em);
+	box-shadow: 0.1em 0.1em 0.1em 0.1em #0005;
+}
+
+main > * {
+	filter: none;
+}
+
+
+/**
+ * Tables
+ * .table is necessary if you want linkable table rows
+ */
+.table {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table > * {
+	display: table-row;
+	height: 2.5em;
+	text-decoration: none;
+}
+
+.table > * + * {
+	border-top: 1px solid #474747;
+}
+
+.table > * > * {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.table > *:hover {
+	background-color: #fff3;
+}
+
+
+/**
+ * Input
+ */
+input, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	width: 50%;
+	margin: 0.1em;
+	padding: 0.3em;
+	border: 0;
+	border-radius: 0.3em;
+}
+
+input[type=text], textarea {
+	resize: none;
+}
+
+textarea {
+	height: 7.9em;
+}
+
+input[type=submit]:hover {
+	background: #ddd;
+}
+
+input[type=submit]:hover:active {
+	background: #ccc;
+}
+
+
+/**
+ * Alerts
+ */
+*[class^="alert-"] {
+	padding: 1em;
+	border-radius: 1em;
+}
+.alert-error {
+	border-color: #400;
+	background-color: #f557;
+	color: #f00;
+}
+.alert-success {
+	border-color: #040;
+	background-color: #5f57;
+	color: #090;
+}
+
+
+/**
+ * Other
+ */
+img {
+	border-radius: 1em;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: #0004;
+}

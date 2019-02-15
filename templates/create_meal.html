@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Voeg keukenmaaltijd toe{% endblock %}
+{% block content %}
+<h1>Voeg keukenmaaltijd toe</h1>
+<form method="post">
+	<input type="text" name="name" placeholder="Naam van de maaltijd"><br>
+	<input type="text" name="kitchen" placeholder="De keuken waar de maaltijd is"><br>
+	<textarea name="description" placeholder="De beschrijving van de maaltijd"></textarea><br>
+	<input type="file" value="Foto van de maaltijd"><br>
+	<input type="submit" value="Post maaltijd">
+</form>
+{% endblock %}

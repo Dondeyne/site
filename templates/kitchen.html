@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Keukenmaaltijden{% endblock %}
+{% block content %}
+<a href="{{ url_for('get_kitchen_meal_form') }}">Maak keukenmaaltijd</a>
+<h1>Keukenmaaltijden</h1>
+{%- for meal in meals %}
+	<h2>{{ meal.name }} in {{ meal.kitchen }}</h2>
+	{%- if meal.description %}
+	<p>{{ meal.description }}</p>
+	{%- endif %}
+	{%- if meal.image %}
+	<img src="{{ meal.image }}">
+	{%- endif %}
+	{%- if meal != meals[-1] %}
+	<hr>
+	{%- endif %}
+{%- endfor %}
+{%- endblock %}
