@@ -1,0 +1,56 @@
+#: app.py:101
+msgid "Missing kitchen and/or name parameter"
+msgstr ""
+
+#: app.py:104
+msgid "Meal added!"
+msgstr ""
+
+#: templates/base.html:9
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:10 templates/kitchen.html:2 templates/kitchen.html:5
+msgid "Kitchen meals"
+msgstr ""
+
+#: templates/base.html:12 templates/contact.html:2 templates/contact.html:4
+msgid "Contact"
+msgstr ""
+
+#: templates/create_meal.html:2 templates/create_meal.html:4
+msgid "Add kitchen meal"
+msgstr ""
+
+#: templates/create_meal.html:6
+msgid "Name of the meal"
+msgstr ""
+
+#: templates/create_meal.html:7
+msgid "The kitchen where you can get the meal"
+msgstr ""
+
+#: templates/create_meal.html:8
+msgid "The description of the meal"
+msgstr ""
+
+#: templates/create_meal.html:9
+msgid "A picture of the meal"
+msgstr ""
+
+#: templates/create_meal.html:10
+msgid "Submit meal"
+msgstr ""
+
+#: templates/home.html:2
+msgid "The"
+msgstr ""
+
+#: templates/kitchen.html:4
+msgid "Add meal"
+msgstr ""
+
+#: templates/kitchen.html:7
+msgid "in"
+msgstr ""
+

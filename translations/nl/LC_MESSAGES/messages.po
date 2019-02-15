@@ -1,0 +1,56 @@
+#: app.py:101
+msgid "Missing kitchen and/or name parameter"
+msgstr "'kitchen' en/of 'name' parameter ontbreekt"
+
+#: app.py:104
+msgid "Meal added!"
+msgstr "Maaltijd toegevoegd!"
+
+#: templates/base.html:9
+msgid "Home"
+msgstr "Home"
+
+#: templates/base.html:10 templates/kitchen.html:2 templates/kitchen.html:5
+msgid "Kitchen meals"
+msgstr "Keukenmaaltijden"
+
+#: templates/base.html:12 templates/contact.html:2 templates/contact.html:4
+msgid "Contact"
+msgstr "Contact"
+
+#: templates/create_meal.html:2 templates/create_meal.html:4
+msgid "Add kitchen meal"
+msgstr "Voeg keukenmaaltijd toe"
+
+#: templates/create_meal.html:6
+msgid "Name of the meal"
+msgstr "Naam van de maaltijd"
+
+#: templates/create_meal.html:7
+msgid "The kitchen where you can get the meal"
+msgstr "De keuken waar je de maaltijd kan halen"
+
+#: templates/create_meal.html:8
+msgid "The description of the meal"
+msgstr "De beschrijving van de maaltijd"
+
+#: templates/create_meal.html:9
+msgid "A picture of the meal"
+msgstr "Een foto van de maaltijd"
+
+#: templates/create_meal.html:10
+msgid "Submit meal"
+msgstr "Post maaltijd"
+
+#: templates/home.html:2
+msgid "The"
+msgstr "De"
+
+#: templates/kitchen.html:4
+msgid "Add meal"
+msgstr "Voeg maaltijd toe"
+
+#: templates/kitchen.html:7
+msgid "in"
+msgstr "in"
+

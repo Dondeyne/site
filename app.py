@@ -2,6 +2,7 @@
 
 
 from flask import Flask, render_template, request, redirect, url_for, flash, g
+from flask_babel import Babel, _
 from config import *
 from os import mkdir, listdir, remove
 from os.path import isdir, isfile, join as path_join
@@ -59,12 +60,24 @@ app.config.update(dict(
     DEBUG = True,
     LOCALE_PATH = 'translations'
 ))
-
+babel = Babel(app)
 
 
 """
 Flask
 """
+@babel.localeselector
+def get_locale():
+    user = getattr(g, 'user', None)
+    if user:
+        return user.locale
+    return request.accept_languages.best_match(['nl', 'fr', 'en'])
+
+@babel.timezoneselector
+def get_timezone():
+    user = getattr(g, 'user', None)
+    if user:
+        return user.timezone
 
 @app.route('/')
 def home():
@@ -85,10 +98,10 @@ def get_kitchen_meal_form():
 def create_kitchen_meal():
     f = request.form
     if not f.get('kitchen') or not f.get('name'):
-        flash('Missing kitchen and/or name parameter', 'error')
+        flash(_('Missing kitchen and/or name parameter'), 'error')
         return redirect(url_for('get_kitchen_meal_form'))
     Meal(f.get('kitchen'), f.get('name'), f.get('description'), f.get('image'))
-    flash('Meal added!', 'success')
+    flash(_('Meal added!'), 'success')
     return redirect(url_for('get_kitchen_meals'))
 
 

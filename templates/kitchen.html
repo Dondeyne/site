@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-{% block title %}Keukenmaaltijden{% endblock %}
+{% block title %}{{ _('Kitchen meals') }}{% endblock %}
 {% block content %}
-<a href="{{ url_for('get_kitchen_meal_form') }}">Maak keukenmaaltijd</a>
-<h1>Keukenmaaltijden</h1>
+<a href="{{ url_for('get_kitchen_meal_form') }}">{{ _('Add meal') }}</a>
+<h1>{{ _('Kitchen meals') }}</h1>
 {%- for meal in meals %}
-	<h2>{{ meal.name }} in {{ meal.kitchen }}</h2>
+	<h2>{{ meal.name }} {{ _('in') }} {{ meal.kitchen }}</h2>
 	{%- if meal.description %}
 	<p>{{ meal.description }}</p>
 	{%- endif %}

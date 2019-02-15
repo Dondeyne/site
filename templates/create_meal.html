@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-{% block title %}Voeg keukenmaaltijd toe{% endblock %}
+{% block title %}{{ _('Add kitchen meal') }}{% endblock %}
 {% block content %}
-<h1>Voeg keukenmaaltijd toe</h1>
+<h1>{{ _('Add kitchen meal') }}</h1>
 <form method="post">
-	<input type="text" name="name" placeholder="Naam van de maaltijd"><br>
-	<input type="text" name="kitchen" placeholder="De keuken waar de maaltijd is"><br>
-	<textarea name="description" placeholder="De beschrijving van de maaltijd"></textarea><br>
-	<input type="file" value="Foto van de maaltijd"><br>
-	<input type="submit" value="Post maaltijd">
+	<input type="text" name="name" placeholder="{{ _('Name of the meal') }}"><br>
+	<input type="text" name="kitchen" placeholder="{{ _('The kitchen where you can get the meal') }}"><br>
+	<textarea name="description" placeholder="{{ _('The description of the meal') }}"></textarea><br>
+	{{ _('A picture of the meal') }}: <input type="file"><br>
+	<input type="submit" value="{{ _('Submit meal') }}">
 </form>
 {% endblock %}
